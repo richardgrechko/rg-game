@@ -23,17 +23,17 @@ html {
 		background-color: #200020;
 	}
 }
-table.numberupgrade-table button {
-	background-color: #6a6;
-	color: #4c4;
+table.upgrade-table button {
+	background-color: #777;
+	color: #eee;
 	width: 150px;
 	height: 100px;
 	transition: transform 0.25s ease;
 }
-table.numberupgrade-table button:hover {
+table.upgrade-table button:hover {
 	transform: scale(1.1);
 }
-table.numberupgrade-table button:disabled {
+table.upgrade-table button:disabled {
 	background-color: #555;
 	color: #999;
 	width: 150px;
