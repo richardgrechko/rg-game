@@ -1,0 +1,41 @@
+html {
+	background-color: #200000;
+	color: white;
+	animation: html 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+@keyframes html {
+	0%,100% {
+		background-color: #200000;
+	}
+	15% {
+		background-color: #202000;
+	}
+	30% {
+		background-color: #002000;
+	}
+	50% {
+		background-color: #002020;
+	}
+	65% {
+		background-color: #000020;
+	}
+	80% {
+		background-color: #200020;
+	}
+}
+table.numberupgrade-table button {
+	background-color: #6a6;
+	color: #4c4;
+	width: 150px;
+	height: 100px;
+	transition: transform 0.25s ease;
+}
+table.numberupgrade-table button:hover {
+	transform: scale(1.1);
+}
+table.numberupgrade-table button:disabled {
+	background-color: #555;
+	color: #999;
+	width: 150px;
+	height: 100px;
+}
