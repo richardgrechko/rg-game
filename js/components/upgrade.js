@@ -16,10 +16,11 @@ Vue.component("upgrade", {
 	},
 	template:
 	`
-  		<button :disabled="!canAfford" @click="numberupgrade.buy()">
+  		<button :disabled="!canAfford" @click="upgrade.buy()">
  		<nu>{{upgrade.name}}</nu>
  		<nt>{{upgrade.desc}}</nt>
- 		<nt>Cost: {{formatNumber(upgrade.level, 0, 10)}}</nt>
+ 		<nt>Cost: {{format(upgrade.level, 0, 10)}}</nt>
+ 		<nt>Effect: {{upgrade.prefix}}{{upgrade.getMultiplier()}}</nt>
  		</button>
  	`
 })
