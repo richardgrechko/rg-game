@@ -16,6 +16,7 @@ function update()
 function onCreate()
 {
 	game.upgrades.push(
+		new Upgrade("exponent","your first upgrade",new ExpantaNum(2),new ExpantaNum(2),new ExpantaNum(1.8),"^")
 	)
 	initialGame = funcs.getSaveCode();
 
