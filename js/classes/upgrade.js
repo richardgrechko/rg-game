@@ -21,15 +21,15 @@ class Upgrade
 
 	getPrice()
 	{
-		let price = this.in_Price.pow(Decimal.pow(this.priceIncrease, this.level));
-		let dilating = price.gte(E(10).pow(E(Number.MAX_VALUE))) ? ((OmegaNum.log(OmegaNum.root(price.pow(E(Number.MAX_VALUE)), 1e135), 10) / 2) + 1) : 1;
+		let price = this.in_Price.pow(ExpantaNum.pow(this.priceIncrease, this.level));
+		let dilating = price.gte(E(10).pow(E(Number.MAX_VALUE))) ? ((ExpantaNum.log(ExpantaNum.root(price.pow(E(Number.MAX_VALUE)), 1e135), 10) / 2) + 1) : 1;
 		return price.pow(dilating);
 	}
 	
 	buy() {
-		if (this.getPrice().lt(game.number))
+		if (this.getPrice().lt(game.points))
 		{
-			game.number = game.number.div(this.getPrice());
+			game.points = game.points.div(this.getPrice());
 			this.level = new Decimal(this.level).add(1);
 			return true;
 		}
