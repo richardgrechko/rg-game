@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Absolute Layerum ERA 1</title>
+    <meta name="description" content="This is about watching stats grow!"/>
+    <meta name="og:title" content="Absolute Layerum ERA 1"/>
+    <meta name="og:description" content="This is about watching stats grow!"/>
+    <meta property="og:image" content="https://richardgrechko.github.io/absolute-layerum-era1//images/AbsoluteLayerumIcon.png">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="default center">You're in Absolute Layerum ERA 1 (β 1.0.4)</div>
+    <div id="app">
+        <div id="tabs"></div>
+        <div id="stats" class="small" style="text-align: center;">
+            points: {{game.points}}
+        </div>
+        <div id="upgrades">
+            <upgrade-table :upgrades="upgrades">Upgrades</upgrade-table>
+        </div>
+        <div id="updatelogs">
+            <div class="big center">Update Logs:</div>
+            <div class="default center">α 0.1.1 - 05/14/24</div>
+            <div class="small center">welcome</div>
+            <div class="tiny">hello welcome to aphiltorum</div>
+        </div>
+    </div>
+</body>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+<script src="js/ExpantaNum.js"></script>
+<script src="js/classes/upgrade.js"></script>
+<script src="js/NumFormat.js"></script>
+</html>
