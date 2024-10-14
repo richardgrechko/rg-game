@@ -2,9 +2,9 @@ Vue.component("upgrade", {
 	props: ["upgrade"],
 	methods: 
 	{
-		formatNumber: function(n, prec, prec1000, lim)
+		formatNumber: function(n, prec, lim)
 		{
-			return format(n, prec, prec1000, lim)
+			return format(n, prec, lim)
 		},
 	},
 	computed:
@@ -19,7 +19,7 @@ Vue.component("upgrade", {
   		<button :disabled="!canAfford" @click="numberupgrade.buy()">
  		<nu>{{upgrade.name}}</nu>
  		<nt>{{upgrade.desc}}</nt>
- 		<nt>Cost: {{formatNumber(upgrade.level, 0, 0, 10)}}</nt>
+ 		<nt>Cost: {{formatNumber(upgrade.level, 0, 10)}}</nt>
  		</button>
  	`
 })
