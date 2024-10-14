@@ -8,7 +8,7 @@ class Upgrade
 		this.priceIncrease = priceIncrease;
 		this.multi = multi; // mor poents
 		this.prefix = "×";
-		this.level = new OmegaNum(0);
+		this.level = new ExpantaNum(0);
 	}
 
 	getMultiplier()
