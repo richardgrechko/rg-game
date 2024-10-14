@@ -4,7 +4,7 @@ Vue.component("upgrade", {
 	{
 		formatNumber: function(n, prec, prec1000, lim)
 		{
-			return formatNumber(n, prec, prec1000, lim)
+			return format(n, prec, prec1000, lim)
 		},
 	},
 	computed:
