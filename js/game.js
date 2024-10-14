@@ -1,3 +1,6 @@
 let game = {
-	points: 0
+	points: new ExpantaNum(5),
+	upgrades: [
+		new Upgrade("exponent","your first upgrade",new ExpantaNum(5),new ExpantaNum(5),new ExpantaNum(4.6))
+	],
 };
