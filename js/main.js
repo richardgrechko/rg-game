@@ -10,7 +10,7 @@ function update()
 	dt2 = Date.now();
 	dt = (dt2 - dt1) / 1000;
 	dt1 = Date.now();
-	
+	game.points = game.points.mul(game.multiplier.pow(dt))
 	requestAnimationFrame(update);
 }
 function onCreate()
