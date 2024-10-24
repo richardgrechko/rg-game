@@ -1,3 +1,8 @@
+function E(Number)
+{
+  return new ExpantaNum(Number);
+}
+
 // https://gist.github.com/cloudytheconqueror/10dc9c5698de3a630a01e53bb968a63e
 function exponentialFormat(num, precision, mantissa = true) {
   
