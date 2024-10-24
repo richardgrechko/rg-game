@@ -8,7 +8,9 @@
 <body>
     <div class="default center">richardgrechko game (v 0.1.1)</div>
     <div id="app">
-        <div id="tabs"></div>
+        <div id="tabs">
+            <tab-buttons :tabs="tabs"></tab-buttons>
+        </div>
         <div id="stats" class="small" style="text-align: center;">
             points: {{points}}
         </div>
