@@ -1,6 +1,6 @@
-function E(Number)
+function E(number)
 {
-  return new ExpantaNum(Number);
+  return new ExpantaNum(number);
 }
 
 // https://gist.github.com/cloudytheconqueror/10dc9c5698de3a630a01e53bb968a63e
